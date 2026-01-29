@@ -1,1 +1,25 @@
-# Network Design Lab
+# Network Design Lab – Secure Segmentation & Traffic Flow
+
+## Purpose: Design and document a secure, segmented network that reflects real-world operational and security best practices.
+
+## Overview
+This lab documents a small-to-mid sized network design built with security and reliability in mind. The goal is to demonstrate practical networking fundamentals (IP planning, routing, segmentation) while applying defensive concepts like least privilege, controlled traffic flow, and centralized monitoring.
+
+## Objectives
+- Design a scalable IP addressing plan and VLAN segmentation
+- Define controlled traffic flows between zones (least privilege)
+- Apply a baseline firewall/ACL policy to reduce attack surface
+- Identify where logging/monitoring should live for visibility
+- Document the design clearly enough that another person could implement it
+
+## Network Scope
+**Zones / VLANs**
+- **VLAN 10 – User LAN:** Workstations and user endpoints  
+- **VLAN 20 – Server LAN:** Internal services (AD/DNS/File/Web as needed)  
+- **VLAN 30 – Management:** Admin access (switch/router/firewall management)  
+- **VLAN 40 – Guest / BYOD:** Internet-only access  
+- **DMZ – Public Services (optional):** External-facing services (reverse proxy/web)
+
+## Logical Diagram
+> Add your diagram image here (recommended: export from draw.io)
+- File: `docs/network-diagram.png`
